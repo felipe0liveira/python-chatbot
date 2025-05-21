@@ -1,51 +1,51 @@
 # POC Chatbot
 
-Uma prova de conceito simples de um chatbot usando FastAPI com WebSockets.
+A simple proof of concept chatbot using FastAPI with WebSockets.
 
-## Funcionalidades
+## Features
 
-- Endpoint de health check (`/health`)
-- Comunicação em tempo real via WebSocket (`/ws/chat`)
-- Interface web simples para interagir com o chatbot
+- Health check endpoint (`/health`)
+- Real-time communication via WebSocket (`/ws/chat`)
+- Simple web interface to interact with the chatbot
 
-## Como executar
+## How to Run
 
-### 1. Crie um env python
+### 1. Create a Python Virtual Environment
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate # acesse o venv
+source .venv/bin/activate # activate the virtual environment
 ```
 
-### 2. Instale as dependências
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Execute o servidor
+### 3. Run the Server
 
 ```bash
 python main.py
 ```
 
-O servidor será iniciado na porta 8000.
+The server will start on port 8000.
 
-### 3. Acesse a interface
+### 4. Access the Interface
 
-Abra seu navegador e acesse:
+Open your browser and navigate to:
 
 ```
 http://localhost:8000/chatbot
 ```
 
-## Estrutura do projeto
+## Project Structure
 
-- `main.py` - Aplicação FastAPI com as rotas e lógica do backend
-- `requirements.txt` - Dependências do projeto
-- `static/index.html` - Interface web para interagir com o chatbot
+- `main.py` - FastAPI application with backend routes and logic
+- `requirements.txt` - Project dependencies
+- `static/index.html` - Web interface to interact with the chatbot
 
 ## Endpoints
 
-- `GET /health` - Health check (retorna status do serviço)
-- `WebSocket /ws/chat` - Endpoint WebSocket para comunicação em tempo real
+- `GET /health` - Health check (returns service status)
+- `WebSocket /ws/chat` - WebSocket endpoint for real-time communication
